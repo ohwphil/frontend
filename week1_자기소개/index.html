@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오현우의 페이지</title>
+    <style>
+      body{
+        background-color:lightblue;
+        margin: 0;
+        padding: 0;
+      }
+      #header{
+        text-align: center;
+      }
+      #body{
+        margin: 0 20% 0 20%
+      }
+      .center_align{
+        text-align: center;
+      }
+    </style>
+    <script type="text/javascript" src="action.js"></script>
+</head>
+<body>
+    <div id="header">
+      <img src="./img/eoseowa.png" alt="어서와"/>
+    </div>
+    <div id="body">
+      <div class="center_align">
+        <h1>오현우의 페이지에 온 것을 환영합니다!</h1>
+      </div>
+      <p>
+        <del>어서와</del> 안녕하세요 오현우입니다.
+        <br/>
+        저는 개발 공부를 하고 있는 학생입니다. 제 깃허브 링크는
+        <a href="https://github.com/ohwphil">여기</a>입니다.
+        <br/>
+        저는 프로그램의 거의 모든 분야에 거쳐 넓고 깊은 지식을 가지는 것을 목표로 하고 있습니다.
+        물론 아직 가지고 있는 지식이 많지는 않지만 <del>노오오오오력</del>노력과 공부를 통해 지식을 쌓아나가고 싶습니다.
+        아직까지 무슨 페이지를 만들어 보고 싶다는 생각은 없습니다. 나중에 아이디어를 얻어 만들게 된다면, 다른 사람들에게 최대한 도움이 되며,
+        선한 영향력을 주는 웹페이지를 만들어 보고 싶습니다.
+        <br/>
+        조금 색다르게 제 소개 페이지를 퀴즈로 만들어 보기로 결정했습니다.
+      </p>
+      <form name="myform">
+          <h3>0. 당신의 이름은?</h3>
+          <input placeholder="name?" id="name" required/>
+          <h3>1. 오현우가 가장 좋아하는 스포츠 종목은 무엇일까요?(30점)</h3>
+          <div id="q1">
+            <!-- name으로 묶음 -->
+            <input type="radio" name="sports" value="0" id="football"/>
+            <label for="football">축구</label>
+            <input type="radio" name="sports" value="1" id="baseball"/>
+            <label for="baseball">야구</label>
+            <input type="radio" name="sports" value="2" id="basketball"/>
+            <label for="basketball">농구</label>
+            <input type="radio" name="sports" value="3" id="a_football"/>
+            <label for="a_football">미식축구</label>
+          </div>
+          <h3>2. 오현우가 할 수 있는 프로그래밍 언어는 무엇일까요?(잘하는 언어 선택 시 : +10점, 할 줄은 알지만 못하는 언어 : +5점, 할 줄 모르는 언어 : -10점)</h3>
+          HTML, CSS는 엄밀히 이야기하면 프로그래밍 언어는 아니지만 언어라고 칩시다...
+          <br/>
+          <br/>
+          <div id="q2">
+            <!-- checkbox는 다중 선택이 가능하며
+            조회했을 시 해당 checkbox가 선택되어 있는
+            값을 모두 불러옴 -->
+            <input type="checkbox" id="C"/> C
+            <input type="checkbox" id="C++"/> C++
+            <input type="checkbox" id="Python"/> Python
+            <input type="checkbox" id="R"/> R
+            <input type="checkbox" id="Java"/> Java
+            <input type="checkbox" id="Ruby"/> Ruby
+            <input type="checkbox" id="HTML"/> HTML
+            <input type="checkbox" id="CSS"/> CSS
+            <input type="checkbox" id="JavaScript"/> JavaScript
+            <input type="checkbox" id="PHP"/> PHP
+          </div>
+          <h3>3. 오현우의 혈액형은 무엇일까요?(20점)</h3>
+          <div id="q3">
+            <!-- name으로 묶음 -->
+            <input type="radio" name="blood" value="0" id="A"/>
+            <label for="A">A형</label>
+            <input type="radio" name="blood" value="1" id="B"/>
+            <label for="B">B형</label>
+            <input type="radio" name="blood" value="2" id="O"/>
+            <label for="O">O형</label>
+            <input type="radio" name="blood" value="3" id="AB"/>
+            <label for="AB">AB형</label>
+          </div>
+          <h3>4. 오현우에게 하고 싶은 말이 있습니까?</h3>
+          <textarea id="q4" placeholder="작성해주세요" cols="50" rows="10" oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"'
+          style="resize: none; padding: 8px; margin: 20px; max-height: 100px;"></textarea>
+          <div class="center-align">
+            <button onclick="setAction()">답변 제출</button>
+          </div>
+          
+        
+      </form>
+    </div>
+    
+
+    <!-- 과제
+    자기소개하기
+    수업 동안 모든 태그를 활용하여 작성
+    경우에 따라 본인이 알고 있는 다른 태그를 사용해도 괜찮습니다.
+
+    * 저희는 주말반이에요
+      따라서 시간적 제약이 걸릴 수 밖에 없음
+      다른 태그들을 직접 예습하여 사용해도 좋습니다.
+      
+    * 각오, 개발자로서 가치관
+      개발자가 돼서 만들고 싶은 페이지
+      개발을 배우게 된 이유
+
+    -->
+
+    
+</body>
+</html>

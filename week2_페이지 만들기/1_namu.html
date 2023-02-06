@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        border: 1px solid #000; /* 구역 잘 나눠졌는지 보기 위함 */
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        width: 70%;
+        margin: auto;
+      }
+      ul {
+        list-style-position: inside;
+      }
+      .left {
+        float: left;
+      }
+      .clear {
+        clear: both;
+      }
+      .right {
+        float: right;
+      }
+      .hidden {
+        overflow: hidden; /* BFC(블록 서식 맥락)에 의해 overflow: visible(기본값)이면 div 안에 있는 요소들이 그 div를 부모로 인식하지 않게 되어 넘어가는 문제점 발생! */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="hidden">
+      <div class="left clear">
+        <!-- 나무위키 로고에 링크 걸림 -->
+        <div class="left clear max-content" style="margin-left: 100px">
+          <a href="https://namu.wiki">
+            나무위키
+            <img />
+          </a>
+        </div>
+        <!-- 최근 변경 버튼 -->
+        <button>최근 변경</button>
+        <!-- 최근 토론 버튼 -->
+        <button>최근 토론</button>
+        <!-- 특수 기능 버튼 -->
+        <button>특수 기능</button>
+      </div>
+      <div class="right" style="margin-right: 100px">
+        <!-- 사용자 버튼 -->
+        <button></button>
+      </div>
+      <div class="right">
+        <!-- 랜덤 문서 버튼 -->
+        <button></button>
+        <!-- 검색창 -->
+        <input type="text" />
+        <!-- 돋보기 버튼 -->
+        <button></button>
+        <!-- 화살표 버튼 -->
+        <button></button>
+      </div>
+      <div></div>
+    </nav>
+    <br />
+    <main class="hidden">
+      <!-- 메인 콘텐츠 -->
+      <!-- 마진을 rem으로 언제 바꿀까;; -->
+      <div class="left clear" style="width: 65%; margin-left: 2.5%">
+        <div class="hidden" style="margin: 3% auto">
+          <div class="left clear">
+            <h1>나무위키:대문</h1>
+          </div>
+          <div class="right">
+            <div>
+              <div>
+                <button>☆</button>
+                <button>역링크</button>
+                <button>토론</button>
+                <button>편집</button>
+                <button>역사</button>
+                <button>ACL</button>
+              </div>
+              <div>
+                <p>최근 수정 시각 :</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden" style="margin: 3% auto">분류 : 나무위키</div>
+        <div style="margin: 3% auto">
+          <pre style="text-align: center">
+<h3>여러분이 가꾸어 나가는 지식의 나무</h3>
+나무위키에 오신 것을 환영합니다!
+
+나무위키는 누구나 기여할 수 있는 위키입니다.
+검증되지 않았거나 편향된 내용이 있을 수 있습니다.
+          </pre>
+        </div>
+        <!-- 참고 : 실제 나무위키 구현에서는 table로 되어 있음! -->
+        <div class="hidden" style="margin: 0">
+          <div>
+            <div class="left clear" style="width: 20%; margin: 0">
+              <img />
+              <br />
+              <br />
+              <br />
+            </div>
+            <div>
+              <h3>나무위키에 처음 오셨나요?</h3>
+              <p>
+                먼저 나무위키의 규정과 CCL 위반 등 자주 하는 실수, 도움말을
+                확인해 보세요.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hidden" style="margin: 0">
+          <div>
+            <div class="left clear" style="width: 20%; margin: 0">
+              <img />
+              <br />
+              <br />
+              <br />
+            </div>
+            <div>
+              <h3>나무위키 게시판</h3>
+              <p>
+                먼저 나무위키의 규정과 CCL 위반 등 자주 하는 실수, 도움말을
+                확인해 보세요.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hidden" style="margin: 0">
+          <div>
+            <div class="left clear" style="width: 20%; margin: 0">
+              <img />
+              <br />
+              <br />
+              <br />
+            </div>
+            <div>
+              <h3>권리침해 문의</h3>
+              <p>
+                먼저 나무위키의 규정과 CCL 위반 등 자주 하는 실수, 도움말을
+                확인해 보세요.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hidden" style="margin: 0">
+          <div>
+            <div class="left clear" style="width: 20%; margin: 0">
+              <img />
+              <br />
+              <br />
+              <br />
+            </div>
+            <div>
+              <h3>중재 제도</h3>
+              <p>
+                먼저 나무위키의 규정과 CCL 위반 등 자주 하는 실수, 도움말을
+                확인해 보세요.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hidden" style="margin: 0">
+          <div>
+            <div class="left clear" style="width: 20%; margin: 0">
+              <img />
+              <br />
+              <br />
+              <br />
+            </div>
+            <div>
+              <h3>운영진 지원</h3>
+              <p>
+                먼저 나무위키의 규정과 CCL 위반 등 자주 하는 실수, 도움말을
+                확인해 보세요.
+              </p>
+            </div>
+          </div>
+          <div class="hidden" style="margin: 3% auto">
+            <div>
+              <h4 style="text-align: center">나무위키 프로젝트</h4>
+            </div>
+            <div class="hidden">
+              <div class="left clear" style="width: 20%; margin: 0">
+                <img />
+                <br />
+                <br />
+                <br />
+              </div>
+              <div>
+                프로젝트에 참여해서 관련 문서에 기여의 손길을 보내주세요!
+              </div>
+              <div>최근 개설된 프로젝트</div>
+            </div>
+            <div>
+              <p style="text-align: center">문서 작성 요청</p>
+            </div>
+          </div>
+        </div>
+        <div style="margin: 3% auto">
+          <div>
+            <h4>주요 운영 알림</h4>
+          </div>
+          <ul>
+            <li>알림1</li>
+            <li>알림2</li>
+          </ul>
+        </div>
+        <div style="margin: 3% auto">
+          <div>
+            <h4>최근 운영 토론</h4>
+          </div>
+          <ul>
+            <li>토론1</li>
+            <li>토론2</li>
+          </ul>
+        </div>
+      </div>
+      <!-- 최근 변경, 나무뉴스 -->
+      <div class="right" style="width: 30%">
+        <div style="margin: 10%">
+          <h2>최근 변경</h2>
+          <article class="hidden">
+            <!-- 문서명 -->
+            <div class="left clear">
+              <a href="doc1">문서1</a>
+              <!-- 나무위키처럼 버튼으로 묶을 수 있을까? -->
+            </div>
+            <!-- 변경시간 -->
+            <div class="right">변경시간1</div>
+          </article>
+          <article class="hidden">
+            <!-- 문서명 -->
+            <a href="doc1">문서2</a>
+            <!-- 변경시간 -->
+            <div class="right">변경시간2</div>
+          </article>
+          <!-- 똑같은거 몇개 반복... -->
+        </div>
+        <div style="margin: 10%">
+          <h2>나무뉴스</h2>
+          <article>
+            <div>
+              <a href="news1">뉴스명1</a>
+            </div>
+            <div>
+              <a href="news2">뉴스명2</a>
+            </div>
+          </article>
+          <!-- 똑같은거 몇개 반복... -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
